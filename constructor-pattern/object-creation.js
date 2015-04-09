@@ -60,7 +60,10 @@ Object.defineProperties( hoge, {
     enumerable: true,
   }
 });
-console.log(hoge);
+console.log(hoge.someKey);
+console.log(hoge['someKey']);
+console.log(hoge.anotherKey);
+console.log(hoge['anotherKey']);
 
 var obj = {};
 Object.defineProperties(obj, {
